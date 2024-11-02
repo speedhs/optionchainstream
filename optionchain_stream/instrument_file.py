@@ -17,7 +17,7 @@ class InstrumentMaster:
         self.fno_file = 'https://archives.nseindia.com/content/fo/fo_mktlots.csv'
         self.kite = KiteConnect(api_key=api_key)
         self.headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'}
-        self.redis_db = InstrumentDumpFetch()
+        self.redis_db = InstrumentDumpFetch() # user InstrumentDumpFetchDB for postgres database
 
 
     def filter_redis_dump(self):
